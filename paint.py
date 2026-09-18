@@ -38,7 +38,19 @@ def square(start, end):
 
 def circle(start, end):
     """Draw circle from start to end."""
-    pass  # TODO
+#Complete the code to fill the cirle with two points
+    radius = math.hypot(end.x - start.x, end.y - start.y)
+    up()
+    goto(start.x, start.y - radius)
+    down()
+    begin_fill()
+
+    step =(2 * math.pi * radius)/360
+    for _ in range(360):
+       forward(step)
+       left(1)
+
+    end_fill()
 
 
 def rectangle(start, end):
