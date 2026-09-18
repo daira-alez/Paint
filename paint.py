@@ -55,7 +55,7 @@ def circle(start, end):
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
-    #Complete the code to fill the circle with two points    
+    #Complete the code to fill the rectangle with two points    
     pass  # TODO
     up()
     goto(start.x,start.y)
